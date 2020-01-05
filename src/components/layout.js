@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
         }}
       >
         <div class="row">
-        <main class="col-sm-12">{children}</main>
+        <main class="col-lg-12 col-sm-12 col-12">{children}</main>
         </div>
 
         <footer class="row">
-          <div class="col-sm copyright">
+          <div class="col-lg-12 col-sm-12 col-12 copyright">
             <small>© 2020 <a href="https://twitter.com/Kill_In_Sun">@Kill_In_Sun</a></small>
           </div>
         </footer>
