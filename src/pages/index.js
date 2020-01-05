@@ -11,15 +11,15 @@ const IndexPage = ({ data }) => {
       <SEO title="HOME" />
       { data.allMarkdownRemark.edges.map(( { node }) => (
           <article class="row">
-              <div class="row col-lg-1 col-sm-12 post-date">
-                <div class="col-sm-6 col-lg-12 post-year">
+              <div class="row col-lg-1 col-sm-12 col-12 post-date">
+                <div class="col-lg-12 col-sm-6 col-6 post-year">
                   { node.frontmatter.year }
                 </div>
-                <div class="col-sm-6 col-lg-12 post-month-day">
+                <div class="col-lg-12 col-sm-6 col-6 post-month-day">
                   { node.frontmatter.daymonth}
                 </div>
               </div>
-              <div class="col-lg-11 col-sm-12">
+              <div class="col-lg-11 col-sm-12 col-12">
                 <h1> 
                   <Link to={node.fields.slug } >
                     { node.frontmatter.title }
@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
                 </h1>
                 <div class="post-meta-data text-gi-med bg-gi-light">
                   <div class="row">
-                    <small class="col-sm-12"> { node.frontmatter.categories }</small>
+                    <small class="col-lg-12 col-sm-12 col-12"> { node.frontmatter.categories }</small>
                   </div>
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
