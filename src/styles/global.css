@@ -89,6 +89,18 @@ div.post-date{
     text-align: center;
     font-size: 1.5rem;
     border-radius: 1rem;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+div.post-year{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.post-month-day{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* BootStrap4 extend */

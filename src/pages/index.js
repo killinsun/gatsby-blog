@@ -11,15 +11,15 @@ const IndexPage = ({ data }) => {
       <SEO title="HOME" />
       { data.allMarkdownRemark.edges.map(( { node }) => (
           <article class="row">
-              <div class="col-sm-1 post-date">
-                <div class="post-year">
+              <div class="row col-lg-1 col-sm-12 post-date">
+                <div class="col-sm-6 col-lg-12 post-year">
                   { node.frontmatter.year }
                 </div>
-                <div class="post-month-day">
+                <div class="col-sm-6 col-lg-12 post-month-day">
                   { node.frontmatter.daymonth}
                 </div>
               </div>
-              <div class="col-sm-11">
+              <div class="col-lg-11 col-sm-12">
                 <h1> 
                   <Link to={node.fields.slug } >
                     { node.frontmatter.title }
