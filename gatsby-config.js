@@ -26,6 +26,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-code-titles`,
+            options: {
+              className: 'code-title',
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               showLineNumbers: true,

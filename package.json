@@ -19,6 +19,7 @@
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-prismjs": "^3.5.4",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-source-wordpress": "^3.3.11",
