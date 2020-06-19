@@ -2,8 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Categories from '../components/catetgories'
+import Tags from '../components/tags'
 import SEO from "../components/seo"
 import * as moment from 'moment'
+
 
 const IndexPage = ({ data }) => {
   return (
@@ -27,7 +30,8 @@ const IndexPage = ({ data }) => {
                 </h1>
                 <div class="post-meta-data text-gi-med bg-gi-light">
                   <div class="row">
-                    <small class="col-lg-12 col-sm-12 col-12"> { node.frontmatter.categories }</small>
+                    <small> { Categories(node.frontmatter.categories) }</small>
+                    <small> { Tags(node.frontmatter.tags) }</small>
                   </div>
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />

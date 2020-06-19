@@ -103,6 +103,18 @@ div.post-month-day{
     padding-right: 0px;
 }
 
+div.categories > span.post-category {
+    margin-left: 0.3rem;
+}
+
+div.tags {
+    margin-left: 1rem;
+}
+div.tags > span.post-tag {
+    margin-left: 0.3rem;
+}
+
+
 /* BootStrap4 extend */
 .text-gi-med {
     color: #73613e;
