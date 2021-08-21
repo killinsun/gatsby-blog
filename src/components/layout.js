@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Header from "./header"
 
@@ -26,7 +26,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div class="container"
+      <div
+        class="container"
         style={{
           margin: `0 auto`,
           padding: `0px 1.0875rem 1.45rem`,
@@ -34,12 +35,14 @@ const Layout = ({ children }) => {
         }}
       >
         <div class="row">
-        <main class="col-lg-12 col-sm-12 col-12">{children}</main>
+          <main class="col-lg-12 col-sm-12 col-12">{children}</main>
         </div>
 
         <footer class="row">
           <div class="col-lg-12 col-sm-12 col-12 copyright">
-            <small>© 2020 <a href="https://twitter.com/Kill_In_Sun">@Kill_In_Sun</a></small>
+            <small>
+              © 2021 <a href="https://twitter.com/Kill_In_Sun">@Kill_In_Sun</a>
+            </small>
           </div>
         </footer>
       </div>

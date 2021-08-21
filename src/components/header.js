@@ -18,18 +18,15 @@ const Header = ({ siteTitle }) => (
             </Link>
           </span>
         </div>
-          <div class="header_menu col-sm">
-            <ul>
-              <li>
-              </li>
-              <li>
-                <Link to ="/articles/who_am_i">
-                  私について
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div class="header_menu col-md-6 col-sm-12">
+          <ul>
+            <li></li>
+            <li>
+              <Link to="/articles/who_am_i">私について</Link>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
   </header>
 )

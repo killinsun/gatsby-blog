@@ -9,8 +9,10 @@ body {
 }
 
 h1 {
+    width:100%;
     border-bottom: solid 3px #f2df98;
     font-size: 2.0rem;
+    margin: 0.5em 0 0.5em;
 }
 
 h2 {
@@ -18,8 +20,7 @@ h2 {
     padding: 0.5rem;
     color: #73613e;
     border-left: solid 1rem #f2df98;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 3em 0 1.5em;
 }
 
 h3 {
@@ -27,17 +28,18 @@ h3 {
     color: #73613e;;
     padding-bottom: 1rem;
     border-bottom: dashed 2px #f2df98;
+    margin: 3em 0 1.5em;
 }
-
 h4 {
     font-size: 1.25rem;
+    margin: 3em 0 1.5em;
 }
 
 h5 {
 
 }
 
-header{
+header {
     background-color: #73613e;
     color: #f2df98;
     margin: 0 auto;
@@ -58,11 +60,17 @@ div.header_menu ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 div.header_menu ul li {
     margin-left: 1rem;
     font-size: 1.5rem;
+}
+
+div.container {
+    max-width: 800px;
 }
 
 article {
@@ -79,32 +87,82 @@ pre {
 
 div.indivisual-article{
     border-bottom: dashed 5px #f2df98;
-    margin-bottom: 1rem;
+    margin-bottom: 3em;
+}
+
+div.indivisual-article > p {
+    margin-bottom: 3em;
+    line-height: 1.9;
+    font-size: 18px;
+}
+@media only screen and (max-width: 480px) {
+    div.indivisual-article > p {
+        line-height: 1.7;
+        font-size: 16px;
+    }
+}
+
+div.indivisual-article > ul, ol {
+    background: #eeeeee;
+    padding: 3em;
+}
+
+div.indivisual-article > ul, ol> li {
+    margin-bottom: 1em;
 }
 
 div.post-meta-data{
     border-radius: 1rem;
     padding-left: 1.5rem;
+    margin-bottom: 1em;
 }
 
-div.post-date{
-    margin: 0px;
+div.meta-container {
+    align-items: center
+}
+
+div.dateyear-container {
     background: #f2df98;
-    text-align: center;
+    margin: 0px;
     font-size: 1.5rem;
-    border-radius: 1rem;
-    padding-right: 0px;
-    padding-left: 0px;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
 }
 
-div.post-year{
-    padding-left: 0px;
-    padding-right: 0px;
+div.dateyear-container > div {
+    justify-content: center;
+    margin: 0 auto;
+}
+div.dateyear-container > div.post-year-date {
+    display: none;
 }
 
-div.post-month-day{
-    padding-left: 0px;
-    padding-right: 0px;
+@media only screen and (max-width: 768px) {
+    div.dateyear-container {
+        font-size: 0.8rem;
+        max-width: unset;
+        max-height: unset;
+        min-width: unset;
+        min-height: unset;
+        border-radius: 1rem;
+        background-color: #fafafa;
+    }
+
+    div.dateyear-container  > .post-year, .post-date{
+        display: none;
+    }
+
+    div.dateyear-container > div.post-year-date {
+        display: inline-block;
+        border: none;
+    }
+}
+
+div.body-container {
+    padding: 1em 2em 1em 2em;
 }
 
 div.categories > span.post-category {
