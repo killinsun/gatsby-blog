@@ -1,10 +1,9 @@
+// 記事単体のテンプレート
 import React from "react"
 import Layout from "../components/layout"
 import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
-import avatar from "../images/avatar_400x400.jpeg"
 
 export default ({ data }) => {
   const post = data.markdownRemark

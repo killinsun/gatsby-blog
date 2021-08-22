@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -19,7 +19,7 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,14 +28,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    { 
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
             resolve: `gatsby-remark-code-titles`,
             options: {
-              className: 'code-title',
+              className: "code-title",
             },
           },
           {
@@ -48,14 +48,15 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-            }
-          }
+            },
+          },
         ],
-      }
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

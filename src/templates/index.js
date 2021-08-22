@@ -6,11 +6,13 @@ import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
 import * as moment from "moment"
+import Pagenation from "../components/pagination"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location, pageContext }) => {
   return (
     <Layout>
       <SEO title="HOME" />
+      <Pagenation pageContext={pageContext} />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article class="row">
           <div class="row col-xs-12 col-sm-12 col-md-12 meta-container">
@@ -47,17 +49,18 @@ const IndexPage = ({ data }) => {
           </div>
         </article>
       ))}
+      <Pagenation pageContext={pageContext} />
     </Layout>
   )
 }
 
-const skipNum = 0
-
 export const query = graphql`
-  query {
+  query($limit: Int!, $skip: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { ne: "article" } } }
+      limit: $limit
+      skip: $skip
     ) {
       totalCount
       edges {
