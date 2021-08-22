@@ -3,8 +3,14 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `お首が長いのよ`,
-    description: `首無しキリン| プログラミング、ネットワーク、サーバーに関する記録を残すブログです。`,
+    titleTemplate: `%s | お首が長いのよ`,
+    description: `首無しキリン | プログラミング、ネットワーク、サーバーに関する記録を残すブログです。`,
     author: `@kill_in_sun`,
+    siteUrl: `https://blog.killinsun.com`,
+    url: `https://blog.killinsun.com`,
+    image: ``,
+    twitterUsername: `@Kill_In_Sun`,
+    lang: `ja`,
   },
   plugins: [
     {

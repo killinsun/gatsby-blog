@@ -5,11 +5,12 @@ import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
 
-export default ({ data }) => {
-  const post = data.markdownRemark
+const Article = props => {
+  const post = props.data.markdownRemark
+  console.log(post.frontmatter.title)
   return (
     <Layout>
-      <SEO tilte={post.frontmatter.title} />
+      <SEO title={post.frontmatter.title} />
       <h1 dangerouslySetInnerHTML={{ __html: post.frontmatter.title }} />
       <div class="post-meta-data text-gi-med bg-gi-light">
         <div class="row">
@@ -30,6 +31,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default Article
 
 export const query = graphql`
   query($slug: String!) {

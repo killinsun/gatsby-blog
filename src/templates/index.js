@@ -1,17 +1,15 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
-import * as moment from "moment"
 import Pagenation from "../components/pagination"
 
 const IndexPage = ({ data, location, pageContext }) => {
   return (
     <Layout>
-      <SEO title="HOME" />
+      <SEO />
       <Pagenation pageContext={pageContext} />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article class="row">
