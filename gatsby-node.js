@@ -9,7 +9,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { paginate } = require("gatsby-awesome-pagination")
-const { post } = require("jquery")
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
