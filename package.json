@@ -27,7 +27,7 @@
     "gatsby-remark-images": "^3.3.11",
     "gatsby-remark-prismjs": "^3.5.4",
     "gatsby-source-filesystem": "^2.3.11",
-    "gatsby-source-wordpress": "^3.3.11",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-remark": "^2.8.15",
     "gatsby-transformer-sharp": "^2.5.5",
     "ink-spinner": "^3.0.1",
