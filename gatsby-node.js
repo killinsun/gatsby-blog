@@ -49,6 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = result.data.allMarkdownRemark.nodes
 
+  // ここで記事一覧を生成する
   paginate({
     createPage,
     items: posts,
@@ -57,6 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
     component: path.resolve(`./src/templates/index.js`),
   })
 
+  // ここで記事単体を生成する
   posts.forEach(post => {
     createPage({
       path: post.fields.slug,
