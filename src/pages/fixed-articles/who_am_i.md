@@ -2,6 +2,8 @@
 path: "/articles/who_am_i"
 title: "私について"
 type: "article"
+categories: ["固定記事"]
+date: "2021-08-22"
 ---
 
 <style>
