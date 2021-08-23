@@ -5,7 +5,7 @@ import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
 
-const Article = props => {
+const BlogPost = props => {
   const post = props.data.markdownRemark
   console.log(post.frontmatter.title)
   return (
@@ -32,7 +32,7 @@ const Article = props => {
   )
 }
 
-export default Article
+export default BlogPost
 
 export const query = graphql`
   query($slug: String!) {
