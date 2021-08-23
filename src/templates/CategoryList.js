@@ -5,6 +5,7 @@ import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
 import Pagenation from "../components/pagination"
+import DateYearCircle from "../components/DateYearCircle"
 
 const CategoryList = ({ data, pageContext }) => {
   const { category } = pageContext
@@ -16,17 +17,10 @@ const CategoryList = ({ data, pageContext }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article class="row">
           <div class="row col-xs-12 col-sm-12 col-md-12 meta-container">
-            <div class="col-12 col-md-2 dateyear-container">
-              <div class="row col-6 col-sm-6 col-md-12 post-year">
-                {node.frontmatter.year}
-              </div>
-              <div class="row col-6 col-sm-6 col-md-12 post-date">
-                {node.frontmatter.daymonth}
-              </div>
-              <div class="row col-12 post-year-date">
-                {node.frontmatter.year}/{node.frontmatter.daymonth}
-              </div>
-            </div>
+            <DateYearCircle
+              year={node.frontmatter.year}
+              dayMonth={node.frontmatter.daymonth}
+            />
             <div class="col-sm-12 col-md-10">
               <div class="row col-md-12">
                 <h1>
