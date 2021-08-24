@@ -86,6 +86,7 @@ pre {
 }
 
 div.indivisual-article{
+    margin-top: 10em;
     border-bottom: dashed 5px #f2df98;
     margin-bottom: 3em;
 }
