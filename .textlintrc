@@ -1,0 +1,10 @@
+{
+  "filters": {},
+  "rules": {
+    "@proofdict/proofdict": {
+			"dictURL": "https://tanabebe.github.io/proof-dictionary/"
+		},
+		"preset-ja-technical-writing": true,
+    "preset-jtf-style": true,
+  }
+}
