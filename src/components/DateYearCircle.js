@@ -1,8 +1,4 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolder } from "@fortawesome/free-solid-svg-icons"
-import { Link } from "gatsby"
-import kebabCase from "lodash/kebabCase"
 
 const DateYearCircle = ({ year, dayMonth }) => (
   <div class="dateyear-container col-12 col-md-2">
