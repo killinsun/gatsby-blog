@@ -4,10 +4,18 @@ import Layout from "../components/layout"
 import Categories from "../components/catetgories"
 import Tags from "../components/tags"
 import SEO from "../components/seo"
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+} from "react-share"
 
 const BlogPost = props => {
   const post = props.data.markdownRemark
-  console.log(post.frontmatter.title)
+  const url = `https://blog.killinsun.com${props.data.markdownRemark.fields.slug}`
+  const excerpt = props.data.markdownRemark.excerpt
+
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -23,11 +31,28 @@ const BlogPost = props => {
           <small> {Tags(post.frontmatter.tags)}</small>
         </div>
       </div>
-      <small>{post.frontmatter.date}</small>
       <div
         class="indivisual-article"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 mx-auto sns-share-icons">
+            <FacebookShareButton url={url} title={post.frontmatter.title}>
+              <FacebookIcon size={50} round />
+            </FacebookShareButton>
+            <TwitterShareButton
+              url={url}
+              title={post.frontmatter.title}
+              via="Kill_In_Sun"
+              related={["Kill_In_Sun", "GatsbyJS"]}
+              hashtags={post.frontmatter.tags}
+            >
+              <TwitterIcon size={50} round />
+            </TwitterShareButton>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -38,6 +63,10 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
+      fields {
+        slug
+      }
       frontmatter {
         year: date(formatString: "YYYY")
         daymonth: date(formatString: "MM/DD")

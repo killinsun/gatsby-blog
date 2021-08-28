@@ -193,6 +193,10 @@ div.tags > span.post-tag {
   display: table;
 }
 
+.sns-share-icons  > button {
+    margin-right: 1vw;
+}
+
 /* BootStrap4 extend */
 .text-gi-med {
     color: #73613e;
