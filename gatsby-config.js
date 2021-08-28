@@ -14,10 +14,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-48898336-1",
+        trackingIds: ["UA-48898336-1"],
       },
     },
     {
