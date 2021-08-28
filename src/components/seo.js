@@ -57,6 +57,7 @@ const SEO = ({ title, description, image, lang }) => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <script src="https://j.wovn.io/1" data-wovnio="key=Zlq6ux" async></script>
     </Helmet>
   )
 }
