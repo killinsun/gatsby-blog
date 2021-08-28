@@ -15,10 +15,7 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: "/public",
-        createlinkInHead: true,
-      },
+      options: {},
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
