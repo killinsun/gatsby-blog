@@ -14,7 +14,6 @@ import {
 const BlogPost = props => {
   const post = props.data.markdownRemark
   const url = `https://blog.killinsun.com${props.data.markdownRemark.fields.slug}`
-  const excerpt = props.data.markdownRemark.excerpt
 
   return (
     <Layout>
