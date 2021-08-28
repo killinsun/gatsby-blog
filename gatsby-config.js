@@ -14,6 +14,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: "/public",
+        createlinkInHead: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["UA-48898336-1", "G-9LH5TWEG5T"],
