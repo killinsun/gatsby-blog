@@ -1,10 +1,26 @@
 {
+  "plugins": [
+    "html"
+  ],
   "filters": {},
   "rules": {
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": false
+    },
+    "spellcheck-tech-word": true,
     "@proofdict/proofdict": {
-			"dictURL": "https://tanabebe.github.io/proof-dictionary/"
-		},
-		"preset-ja-technical-writing": true,
-    "preset-jtf-style": true,
+      "dictURL": "https://azu.github.io/proof-dictionary/"
+    },
+    "prh": {
+      "rulePaths": [
+        "dict/wovn.yml"
+      ]
+    },
+    "ja-space-between-half-and-full-width": {
+      "space": "always"
+    }
   }
 }
