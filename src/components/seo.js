@@ -57,7 +57,7 @@ const SEO = ({ title, description, image, lang }) => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
-      <script src="https://j.wovn.io/1" data-wovnio="key=Zlq6ux" async></script>
+      <script src="https://j.staging1-wovn.com/1" data-wovnio="key=YB0LQD" async></script>
       <link rel="alternate" hreflang="en" href={`${seo.url}?wovn=en`} />
       <link rel="alternate" hreflang="ko" href={`${seo.url}?wovn=ko`} />
       <link rel="alternate" hreflang="ja" href={seo.url} />
