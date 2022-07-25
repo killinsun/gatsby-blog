@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
         <footer class="row">
           <div class="col-lg-12 col-sm-12 col-12 copyright">
             <small>
-              © 2021 <a href="https://twitter.com/Kill_In_Sun">@Kill_In_Sun</a>
+              © 2022 <a href="https://twitter.com/Kill_In_Sun">@Kill_In_Sun</a>
             </small>
           </div>
         </footer>
