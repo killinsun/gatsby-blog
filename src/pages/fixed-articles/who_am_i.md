@@ -18,13 +18,13 @@ date: "2021-08-22"
 
 ## 首無しキリン - Killinsun
 
-<img class="mx-auto profile-image" src="https://pbs.twimg.com/profile_images/1289492800354938881/8wLr01s0_400x400.jpg" alt="首無しキリン"/>
+<img class="mx-auto profile-image" src="https://pbs.twimg.com/profile_images/1589170117631709184/vTz7ktdK_400x400.jpg" alt="首無しキリン"/>
 
 ### 概要
 
 1993/03/11 生まれ
 
-猫派であり Vim 派（最近は VScode に浮気している)
+猫派であり Vim 派（最近まで VScode に浮気していたが、 Rails で書くことが多いので Rubymine を使うことが多い)
 
 JavaScript/Node.js が好き
 
